@@ -25,7 +25,9 @@
     },
     {
       "type": "email",
-      "custom_emails": [],
+      "custom_emails": [
+        "tim.strietzel@y42.com "
+      ],
       "user_ids": [],
       "team_ids": [
         "a61fa6bf-4bd2-4c68-8728-514fe89b52bd"
