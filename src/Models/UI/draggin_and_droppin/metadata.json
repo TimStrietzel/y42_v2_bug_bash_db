@@ -2,7 +2,9 @@
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/core/y42-metadata.json",
   "name": "draggin_and_droppin",
   "description": "",
-  "tags": [],
+  "tags": [
+    "marketing"
+  ],
   "owners": {
     "user_ids": [],
     "team_ids": []
