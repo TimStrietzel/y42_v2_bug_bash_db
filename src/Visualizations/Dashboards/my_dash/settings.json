@@ -1,0 +1,7 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-dashboard-settings.json",
+  "theme": "src/Visualizations/Themes/my dash-a6b9abb4-4bbc-4eef-ac25-11c93a0d7e21.json",
+  "order": [
+    "src/Visualizations/Dashboards/my_dash/Tab_1"
+  ]
+}
