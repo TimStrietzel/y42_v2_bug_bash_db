@@ -1,8 +1,32 @@
 {
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/orchestration/orchestration-settings.json",
-  "cronExpression": "",
+  "cronExpression": "0/15 * 1/1 * *",
   "forceSchedule": false,
-  "linkDataArray": [],
-  "nodeDataArray": [],
+  "linkDataArray": [
+    {
+      "from": "99dc6d41-bbcf-482e-90ac-abd017224d8b",
+      "to": "f0919006-7bf8-4ed6-b263-e9c381eb5788"
+    }
+  ],
+  "nodeDataArray": [
+    {
+      "key": "f0919006-7bf8-4ed6-b263-e9c381eb5788",
+      "path": "src/Models/UI/Phil_s_cool_UI_Model/phil_s_cool_ui_model",
+      "location": "524.0456949966158 0",
+      "onFailure": "stop",
+      "nodeConfig": {
+        "incremental": true
+      }
+    },
+    {
+      "key": "99dc6d41-bbcf-482e-90ac-abd017224d8b",
+      "path": "src/Integrations/mock_data/demo_amazon_ads.csv",
+      "location": "0 0",
+      "onFailure": "stop",
+      "nodeConfig": {
+        "incremental": true
+      }
+    }
+  ],
   "visualDataArray": []
 }
