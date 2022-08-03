@@ -1,0 +1,365 @@
+{
+  "accounts": [
+    {
+      "id": "1ipWM8l5Ji5L_xMDuh9k0CEr4XfFyJ4Bqn2k9LO6gPVs",
+      "name": "export_here"
+    },
+    {
+      "id": "1Wnnw5c6dwcX6qABtC5tsddLhD7N5BgiWUtpa0jt3gG0",
+      "name": "Production NPS survey responses"
+    },
+    {
+      "id": "1EEH6u6AulOTGN41iLR0m8jGNYYcWufeQEbs_DrX95D0",
+      "name": "List of Attendees - Gym"
+    },
+    {
+      "id": "1iBQWZWAH05v9FZd2iMTioxDo9LxYgHtVEt3td8Olgmo",
+      "name": "Metric List CS As-Is 20.05.22 "
+    },
+    {
+      "id": "1kn0pMwjbcLPrVwPFzhp-OT-w2RyPLJH3ivOR9o2pU-4",
+      "name": "Blank Data Stats"
+    },
+    {
+      "id": "11fsewQBnsA6eXmLbjIGpcRSS8g-WExVT6t5jMKgI_pk",
+      "name": "Customer Success Operating Model"
+    },
+    {
+      "id": "1UYx-HkugiwWHfKn85rIvImuUCoF7oSY7PXFQR7CJguY",
+      "name": "Lytics Data Dictionary Cleanup"
+    },
+    {
+      "id": "1KS2UQZpEJM8NznUdmmSaK7D9RdBS8P7kEF8bqZIespA",
+      "name": "Accounts per CSM overall"
+    },
+    {
+      "id": "1cdf5l2ZYKL0EK5uuu0tvoWsqVCeRdKa2j51FDS5G5gc",
+      "name": "Churn Assumptions"
+    },
+    {
+      "id": "1J104hWnCrXQDtsguuzQBamohScLh8C3uRvHCAlts2fQ",
+      "name": "Summer Party 05.08.2022"
+    },
+    {
+      "id": "1pmG70H4C4fCmEbdMmV9suJfx738t39jvrPz44zP3QXE",
+      "name": "IC-Customer-Success-Plan-Tasks"
+    },
+    {
+      "id": "1DTvlv-Abs1v4eRatCiRqFAkxRawo908qZAuJ22zQHLo",
+      "name": "Accounts - DNC  Churned -2022-07-19-08-56-43"
+    },
+    {
+      "id": "1ZZfLxt4XHa1Tgb-lPo5vqyoBaiId80IlLKB0HGURLpA",
+      "name": "Untitled spreadsheet"
+    },
+    {
+      "id": "1GZsN6dk1_Sf2copuGsjrbbSoQMSIIffQ3PWXgF9s5jQ",
+      "name": "Candidates Referral Sheet"
+    },
+    {
+      "id": "1gpV-qXkrFMO8zcx2fO_5sZMi58-6ARuJX5TQOxnShp0",
+      "name": "2021-11_Pricing v2_FS-BK"
+    },
+    {
+      "id": "1Hlvf8CasK0UVUomIotNWUYTapKGodBQo1Nll1JYqkWs",
+      "name": "adhoc_sheet"
+    },
+    {
+      "id": "1P1Ixz1Pf4KVWdMfCF75HlA6R8WgRJ0gJ4IxK6tYV_MM",
+      "name": "ARCHIVED - CS Customer Journey Draft"
+    },
+    {
+      "id": "1U8Phstkc7v-uCnHbE14msuUs8xZvOPunQYcOyD1O5LY",
+      "name": "Expired/Expiring Discounts"
+    },
+    {
+      "id": "1xBK5KOUXKo76IwtjbDtwuWNkbTMgLwbqJ8vwCHsqoDs",
+      "name": "Giang - account list"
+    },
+    {
+      "id": "1vA3tzn9wS6A_clPBbdEn9v39bNTKt6wen_mHxKztZWU",
+      "name": "Integrations for BETA onboarding tour"
+    },
+    {
+      "id": "1QF_9wQ_9ZKYsTQNsCyUrd1OoAtkb5TmYycjE6t5R8vA",
+      "name": "Copy of Braulio's accounts"
+    },
+    {
+      "id": "1qDfL6SjcswmR-zL84YFc7t77lHDJMw1QuYi1aZOPRUw",
+      "name": "Braulio's accounts"
+    },
+    {
+      "id": "1n-JPQRhxpdv_q77OWH_9AW-JFwYc-CSLPc8KEcMgX9c",
+      "name": "Number of editing users and unique integrations - 30.06."
+    },
+    {
+      "id": "1Vh74o4gIyKGx5oGcVUbVRD6DxqjggyaH3EypDAZj-0s",
+      "name": "OKR Tracker "
+    },
+    {
+      "id": "1iLlmTaWNnWuqCxG_uF0eo5lEcUtOP7T78OU-ALFsRZQ",
+      "name": "Backend Services (deprecated)"
+    },
+    {
+      "id": "1-HnXzQGVJ_ocBmCPH9RltQyULUeuutFo58Zbu-Tk81c",
+      "name": "CS Metrics - team requests"
+    },
+    {
+      "id": "14y5V7-bOTz3vjtWD3y8vVUVYu2wvlyChslMb1ysNPGo",
+      "name": "Customer Bi-Weekly Feedback (Responses)"
+    },
+    {
+      "id": "1MWcpBzxI9l6k7HaWzNzMKDl0MicxnqByityB4sMOqqE",
+      "name": "Difference in # of customer - SF vs activation"
+    },
+    {
+      "id": "1dDTpUVzJB-V82bzsr3swbcVuuoPYZTH_ASSgyKC3rY8",
+      "name": "CS Q2 22 KRs What is measurable atm? 17.06.22"
+    },
+    {
+      "id": "1_tHC5Sp2hjykF5q9NkP854VNGBARhH9kzzfhT3ycJd4",
+      "name": "alasco - outreach"
+    },
+    {
+      "id": "1AcRrSrIw3Ocg9I3HViO4UwWvtj_4XiZCuK4rvWE4lsY",
+      "name": "Internal Customer Referral"
+    },
+    {
+      "id": "15dGKwQHv9VgP2PBYNQXzZ30u37QJvZoXyJhKkUxTUrU",
+      "name": "GSheets integration V2 questions"
+    },
+    {
+      "id": "15pp14PPwAvAa-81KnxqFHKjf1CUEJQmGB46HaTdBsRA",
+      "name": "v2 Private Beta Waitlist"
+    },
+    {
+      "id": "1N_67HtVJrgl9vjDIsTOxw_v5YmFjtC5H2ZF0LmC4GbE",
+      "name": "Metric List CS As-Is 20.05.22 - Shared"
+    },
+    {
+      "id": "1ZhyMT0wAXyd0eSiPyZEalMxOdbYhu9r68hZR9dVguJ8",
+      "name": "seungod"
+    },
+    {
+      "id": "1wN0WhZJUgGOFC_aMmLLueq-jUTj04CnpQaZ4Mmn9mZw",
+      "name": "CS OKR & Team Setup"
+    },
+    {
+      "id": "1qBYuLpTQz-DnYksVmhuwHXQHsZQVUH5jjxi1Vxk8iSk",
+      "name": "Salesforce Documentation"
+    },
+    {
+      "id": "1tAuF0kgweZlzUmPIPyb9jXJ3G0MZ5cr-4E-8BMP0W4M",
+      "name": "Social Media Content Plan "
+    },
+    {
+      "id": "1SQUodkNn-wxcCE_Z5b5J_Gp7Tr4mqzPRMn96Q_YTH_k",
+      "name": "Client tickets - Main product issues"
+    },
+    {
+      "id": "17CeRrtO1fRc-qSgbEIUMFComiF1nNR95oTUh8c37-rY",
+      "name": "MRR/NRR Case"
+    },
+    {
+      "id": "161gpl7nSTdhagolusGnytazQCCekrO2F0uHg9x6OHI0",
+      "name": "Product Tour Attributes"
+    },
+    {
+      "id": "1lAf0v5WVhx9RYvstvOETkt77H4NXkADARMkDnxAm-dU",
+      "name": "NRR + MRR Table issues"
+    },
+    {
+      "id": "1aE2YG_wbUGAHoSTCoFHqHzCRRVs14h6Uiua9jJI6VDw",
+      "name": "Managing integrations requests"
+    },
+    {
+      "id": "1hYxM2rqND7HwTGnCbVnV2Z9KFUlkkAe2lLmIMO27N38",
+      "name": "Old activity vs New activity scores"
+    },
+    {
+      "id": "1MikGsTF-LmCWNIqMCQ8ukVka6fcNrvcg5ld04gzK9VQ",
+      "name": "Amazon SC issues & questions"
+    },
+    {
+      "id": "1LKkYLqpCcTE_nCnmpC4qMDl9XrOXCQoKGhRziA6_mvo",
+      "name": "SFDC Contacts"
+    },
+    {
+      "id": "10fLsRWjUaQ0vEWapEHhm4ya7AF4iGP1MOoJmiBC3hlI",
+      "name": "utils_all_dates"
+    },
+    {
+      "id": "1vA6_b6P-SdXqezF2pEhyR_9Z8MozZcYK_ogqjd7DRQ4",
+      "name": "Coffee Cleaning Rotation"
+    },
+    {
+      "id": "1dc3jozO8jjmaPiaqIZ-r-ey2qsqaOVLTyxh40hYjA1Q",
+      "name": "JTBD Data Gathering CS"
+    },
+    {
+      "id": "1ukzqxlDhMWQpd4tHXUkCwWzg2GgNjJw6YtQFyGDq_Uk",
+      "name": "Christmas Party Berlin 2021"
+    },
+    {
+      "id": "1mJFh4g7QzH4voT45C2GZoxk9ADZbnn8fbJ2kWo1CWKI",
+      "name": "30-40 slack questions"
+    },
+    {
+      "id": "1A0F4wAn9t-nlP_oIewbia6ca2ahZNAl7jDC3JN5VVjU",
+      "name": "activation score"
+    },
+    {
+      "id": "1yMBEF2wve9cX9og2puiR02FPLiFBZMc2qk7yMpfJIO8",
+      "name": "CS Review Changes"
+    },
+    {
+      "id": "1awacTgtXH8CDkZXJa3a0v1c4rqq94ImiSVyZKRVr0Rk",
+      "name": "Integrations Documentation"
+    },
+    {
+      "id": "1mtU91zpdf2tXMpKoq7FjaUe4bGlJXIBJAp1jVHxvhck",
+      "name": "List of Attendees - Gym"
+    },
+    {
+      "id": "1nfmqpgQZMaE8DJbmqLs_G-yJZdVvOFvkWN17cNWAytk",
+      "name": "Competitive Analysis - Integrations"
+    },
+    {
+      "id": "16F_27A4pxV2GO_ACSVHU7q1Xj99AtI6-M5TqgR8T8AY",
+      "name": "CS Hiring Criteria Scoring Sheet Scorecard"
+    },
+    {
+      "id": "1qvVOiIDW24XEhfym_6NHsppEkZho-BXO9LwBvhGEdhU",
+      "name": "raw_data_guide"
+    },
+    {
+      "id": "1KKVREiCL2y3klMFMAdgIRBYGGYR8g9WtoN_nAUNGthE",
+      "name": "Klavyio data"
+    },
+    {
+      "id": "16kCiPr99zBhDLaS2XtON7bCViK_f_KZJeuNtA0ZM90g",
+      "name": "Pinterest"
+    },
+    {
+      "id": "17lOE0__MHJgd8ee5tZmjNDg1LUNfRAVCfgITpKqbEbQ",
+      "name": "Berlin y42 guide"
+    },
+    {
+      "id": "1abQEvRyUuJXAMgrjh6Ptt0RDasE6B33uQSVgNIY5Ekw",
+      "name": "poc_start_dates"
+    },
+    {
+      "id": "1cP-38eGejfv47wLh84wggPwhICQXi8C_8FcpsTKEPSY",
+      "name": "AOR Customer Success"
+    },
+    {
+      "id": "1uYSNqsCPToPXMZ9blsp9ox3P0pX28y8X8ssPCHQMbVA",
+      "name": "Product Tours - content"
+    },
+    {
+      "id": "1A7HRUFd0dUrub0aEmfN4QAZOaXHn52UrqnOpK_mZd7I",
+      "name": "y42-Sources, Reports, Metrics (EXTERNAL)"
+    },
+    {
+      "id": "1pZxcj889rdb6Fmf3HoybSxN73T0FY7TnCbWONsCF5Wk",
+      "name": "Integrations - Current Import Status"
+    },
+    {
+      "id": "1qB3bMXJzEemrDjks0Gpg7zJeVfKNJ4DJHAanXLE5BYM",
+      "name": "SQL Usage"
+    },
+    {
+      "id": "1s6Jqp3biY5v9N4eLXZT-OkluTu1EQkxD0gQASwdPNuc",
+      "name": "Customer bi-weekly survey (Responses)"
+    },
+    {
+      "id": "1p6vbvi5FDEPPyQQSgVz9wqRmaNcBkwuc3rhqflghSn4",
+      "name": "Pivot test"
+    },
+    {
+      "id": "1AEIKASc_Pb3QjvAwzhTlOcWsxFUW33q2LtxRY-NETo0",
+      "name": "pivot_test_dis"
+    },
+    {
+      "id": "1WKC5f8iFThDMm_Qo20oLAQhKLekzMztXfJIi70Vg7bw",
+      "name": "automation_here"
+    },
+    {
+      "id": "1xcUByDY7Zrani9rZV_5Tw5ul7DLrEV9wbhq33JBo6HU",
+      "name": "customer merch package"
+    },
+    {
+      "id": "1-J9lM4kqSXCaVeuTSJhSI8UyaCR7MsiUpDBAoF7ohqU",
+      "name": "Helpdesk - NODES articles"
+    },
+    {
+      "id": "1raY9Vy7KY309k1dLS7G8RM74wjELS-A1NMJK_hAB0eg",
+      "name": "Copy of y42-Sources, Reports, Metrics (EXTERNAL)"
+    },
+    {
+      "id": "1UPmelzH8xYWz6DH31f1sHGOIV4BoDxGJGRwdyCDvyPU",
+      "name": "test fill"
+    },
+    {
+      "id": "1fbmwMgsf8gNJ2U-e8Waz6e_GY9OXDNExNhGmi04wUYo",
+      "name": "test_dates"
+    },
+    {
+      "id": "1aWN3vqznpvTTuwMO9FPYpGLtnClZh0OeMmS1kP-vHS0",
+      "name": "test "
+    },
+    {
+      "id": "1UrVYcFzFGRroCWgIG3FE6Gqq48vd2xIDZFxWisipHe0",
+      "name": "Amazon Integrations Project Mgmt"
+    },
+    {
+      "id": "1nvxwJ-0N_W_8WiZ423ZUwsf9ivNyJ1ncXrgqcwhzvu4",
+      "name": "WorkSimpli Groom Preparation"
+    },
+    {
+      "id": "13KCRNjJhM6_6AGW1k4hf-BAhaWyLVBKhAH0pFY7440I",
+      "name": "test_dash"
+    },
+    {
+      "id": "1eOoixj8I--zBRibnXBJoLNRNjnROTeJslp3vLdTPxvE",
+      "name": "decimal test 2"
+    },
+    {
+      "id": "14K4rKcD3c8ybpG5GlUl1w0-qVKFQYVbA6STtFLgRQOY",
+      "name": "y42 - Waterdrop - decimal test"
+    },
+    {
+      "id": "10LN_YVwj9zmvwCGjsJCTiiEm1RTsIJD1T97W0po1300",
+      "name": "Untitled spreadsheet"
+    },
+    {
+      "id": "10yzX-OFFZnhbtPnE4NvzY8YwtLX25nLa4zHzu64xCmA",
+      "name": "BI Dream Reports"
+    },
+    {
+      "id": "1usHlYRnwMuk6BAGVZxBhYwm1hNUixOk6fi4eIGhk3vw",
+      "name": "Untitled spreadsheet"
+    },
+    {
+      "id": "1rZG717e1vqhB46Oo6yoI31CglPfaIjwYYio93A2M2mQ",
+      "name": "test_cs"
+    },
+    {
+      "id": "1prAaBouL-fJc0CrFZjnYH1EqvfyxyQEsWVgzpV3pNAY",
+      "name": "Marketing Revenue Reporting Data Model Quality Check (using Staging Tables)"
+    },
+    {
+      "id": "107ZS1tU0s3ArWCvl_Y6k_dp17RvKpCarwMxzzTa4o-8",
+      "name": "Marketing Reporting Currency Conversion Deep Dive 4.22.21"
+    },
+    {
+      "id": "1TgpC6iq2RHJTMMataN0BMp0c9dMSVmtFO-eqPR3aoOU",
+      "name": "Leadlist Outreach_Mittelstand"
+    },
+    {
+      "id": "1j29B1iyaosL3KCIAe449dhLYRPGFk6MuuQXgDcFM1aI",
+      "name": "NPS_Driver_Analysis_4-Drivers_E-Commerce"
+    }
+  ],
+  "_signature": "fnZWmhWAE9s+CdF8NUterSow+wt/ge0GN08EVyqFgPxKYPXDTEpLgcVzhiLoiISZoVo3+OxoC94aE5V+sKfuCQ=="
+}
