@@ -17,7 +17,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-849.1414141414142 -232.4245283018868"
+      "location": "0 0"
     },
     {
       "key": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
@@ -43,7 +43,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-600.6170238975118 -226.2000385059684"
+      "location": "247 0"
     },
     {
       "key": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
@@ -211,7 +211,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-368.1779995072678 -227.34289564882556"
+      "location": "515 0"
     },
     {
       "key": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
@@ -273,7 +273,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-115.71199440604028 -229.3485645830659"
+      "location": "1030 0"
     }
   ],
   "linkDataArray": [
