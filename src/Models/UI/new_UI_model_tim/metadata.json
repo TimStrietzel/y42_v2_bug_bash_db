@@ -18,5 +18,5 @@
     "team_ids": []
   },
   "asset_status": "verified",
-  "asset_status_message": "<p>Works great!</p>"
+  "asset_status_message": "<p>&lt;a href=\"www.wikipedia.org\"&gt;Works great!&lt;/a&gt;</p>"
 }
