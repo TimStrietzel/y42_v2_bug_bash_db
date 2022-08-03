@@ -1,0 +1,358 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/lineage/lineage-settings.json",
+  "linkDataArray": [
+    {
+      "from": "src/Integrations/test_flo_bugbash/Opportunity",
+      "to": "src/Models/UI/test_bugbash_salesforce/test_bugbash_salesforce"
+    },
+    {
+      "from": "src/Integrations/test_flo_bugbash/Y42_org__c",
+      "to": "src/Models/UI/test_bugbash_salesforce/test_bugbash_salesforce"
+    },
+    {
+      "from": "src/Integrations/mock_data/demo_amazon_ads.csv",
+      "to": "src/Models/UI/draggin_and_droppin/draggin_and_droppin"
+    },
+    {
+      "from": "src/Integrations/mock_data/demo_amazon_ads.csv",
+      "to": "src/Models/UI/draggin_and_droppin/draggin_and_droppin_sorted_by_date"
+    },
+    {
+      "from": "src/Integrations/mock_data/demo_amazon_ads.csv",
+      "to": "src/Models/UI/Phil_s_cool_UI_Model/phil_s_cool_ui_model"
+    },
+    {
+      "from": "src/Integrations/Facebook_Ads/ads_insights",
+      "to": "src/Models/SQL/giang_test/table_1"
+    },
+    {
+      "from": "src/Integrations/Facebook_Ads/ads",
+      "to": "src/Models/SQL/giang_test/table_1"
+    },
+    {
+      "from": "src/Integrations/mock_data/demo_amazon_ads.csv",
+      "to": "src/Models/SQL/test_sql/table_1"
+    },
+    {
+      "from": "src/Integrations/test_flo_bugbash/Contact",
+      "to": "src/Models/SQL/test_sql/sf_contacts"
+    },
+    {
+      "from": "src/Models/UI/Phil_s_cool_UI_Model/phil_s_cool_ui_model",
+      "to": "src/Visualizations/Widgets/ad_spend_monthly"
+    },
+    {
+      "from": "src/Visualizations/Widgets/ad_spend_monthly",
+      "to": "src/Visualizations/Dashboards/my_dash/Tab_1"
+    },
+    {
+      "from": "src/Models/SQL/test_sql/sf_contacts",
+      "to": "src/Exports/export_to_csv/test_sql___sf_contacts"
+    },
+    {
+      "from": "src/Models/SQL/test_sql/sf_contacts",
+      "to": "src/Exports/export_to_sheet/test_sql___sf_contacts"
+    }
+  ],
+  "nodeDataArray": [
+    {
+      "key": "src/Integrations/Facebook_Ads",
+      "category": "Integration",
+      "location": "12 51",
+      "isGroup": true
+    },
+    {
+      "key": "src/Integrations/Facebook_Ads/ads",
+      "category": "Integration",
+      "group": "src/Integrations/Facebook_Ads"
+    },
+    {
+      "key": "src/Integrations/Facebook_Ads/ads_insights",
+      "category": "Integration",
+      "group": "src/Integrations/Facebook_Ads"
+    },
+    {
+      "key": "src/Integrations/Facebook_Ads/campaigns",
+      "category": "Integration",
+      "group": "src/Integrations/Facebook_Ads"
+    },
+    {
+      "key": "src/Integrations/Snowflake_test",
+      "category": "Integration",
+      "location": "12 113",
+      "isGroup": true
+    },
+    {
+      "key": "src/Integrations/Snowflake_test/220622085045_ea7fc9fb-d65f-521e-85dd-879373f61f5c",
+      "category": "Integration",
+      "group": "src/Integrations/Snowflake_test"
+    },
+    {
+      "key": "src/Integrations/mock_data",
+      "category": "Integration",
+      "location": "12 175",
+      "isGroup": true
+    },
+    {
+      "key": "src/Integrations/mock_data/demo_facebook_ads.csv",
+      "category": "Integration",
+      "group": "src/Integrations/mock_data"
+    },
+    {
+      "key": "src/Integrations/mock_data/demo_google_ads.csv",
+      "category": "Integration",
+      "group": "src/Integrations/mock_data"
+    },
+    {
+      "key": "src/Integrations/test_2",
+      "category": "Integration",
+      "location": "12 237",
+      "isGroup": true
+    },
+    {
+      "key": "src/Integrations/test_2/bing_ad_perfomance_report",
+      "category": "Integration",
+      "group": "src/Integrations/test_2"
+    },
+    {
+      "key": "src/Integrations/test_2/google_ads_metrics",
+      "category": "Integration",
+      "group": "src/Integrations/test_2"
+    },
+    {
+      "key": "src/Integrations/test_2/shopify_de",
+      "category": "Integration",
+      "group": "src/Integrations/test_2"
+    },
+    {
+      "key": "src/Integrations/test_2/shopify_omam",
+      "category": "Integration",
+      "group": "src/Integrations/test_2"
+    },
+    {
+      "key": "src/Integrations/test_2/tiktok_ad_report_basic",
+      "category": "Integration",
+      "group": "src/Integrations/test_2"
+    },
+    {
+      "key": "src/Integrations/test_2/velamo_orders",
+      "category": "Integration",
+      "group": "src/Integrations/test_2"
+    },
+    {
+      "key": "src/Integrations/test_3",
+      "category": "Integration",
+      "location": "12 299",
+      "isGroup": true
+    },
+    {
+      "key": "58dfb131-db3b-4c34-a09e-0a60562635ef",
+      "category": "Empty",
+      "group": "src/Integrations/test_3"
+    },
+    {
+      "key": "src/Integrations/test_bash",
+      "category": "Integration",
+      "location": "12 361",
+      "isGroup": true
+    },
+    {
+      "key": "src/Integrations/test_bash/shopify_de",
+      "category": "Integration",
+      "group": "src/Integrations/test_bash"
+    },
+    {
+      "key": "src/Integrations/test_bash/shopify_omam",
+      "category": "Integration",
+      "group": "src/Integrations/test_bash"
+    },
+    {
+      "key": "src/Integrations/test_bugbush",
+      "category": "Integration",
+      "location": "12 423",
+      "isGroup": true
+    },
+    {
+      "key": "91eb19cd-ce9a-4842-b745-db538a94a705",
+      "category": "Empty",
+      "group": "src/Integrations/test_bugbush"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash",
+      "category": "Integration",
+      "location": "12 521",
+      "isGroup": true
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Account",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Contact",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Customer_Reviews__c",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Opportunity",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Opportunity_Contract_Pause__c",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Y42_org__c",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_flo_bugbash/Y42_org_user__c",
+      "category": "Integration",
+      "group": "src/Integrations/test_flo_bugbash"
+    },
+    {
+      "key": "src/Integrations/test_v1_prod_db",
+      "category": "Integration",
+      "location": "12 655",
+      "isGroup": true
+    },
+    {
+      "key": "54190b36-2a0b-4e5b-9504-5b13f0e97f5a",
+      "category": "Empty",
+      "group": "src/Integrations/test_v1_prod_db"
+    },
+    {
+      "key": "src/Models/UI/Phil_s_cool_UI_Model",
+      "category": "UiModel",
+      "location": "12 717",
+      "isGroup": true
+    },
+    {
+      "key": "src/Models/UI/Phil_s_cool_UI_Model/phil_s_cool_ui_model",
+      "category": "UiModel",
+      "group": "src/Models/UI/Phil_s_cool_UI_Model"
+    },
+    {
+      "key": "src/Models/UI/draggin_and_droppin",
+      "category": "UiModel",
+      "location": "12 779",
+      "isGroup": true
+    },
+    {
+      "key": "src/Models/UI/draggin_and_droppin/draggin_and_droppin",
+      "category": "UiModel",
+      "group": "src/Models/UI/draggin_and_droppin"
+    },
+    {
+      "key": "src/Models/UI/draggin_and_droppin/draggin_and_droppin_sorted_by_date",
+      "category": "UiModel",
+      "group": "src/Models/UI/draggin_and_droppin"
+    },
+    {
+      "key": "src/Models/UI/giang_test_model",
+      "category": "UiModel",
+      "location": "12 841",
+      "isGroup": true
+    },
+    {
+      "key": "5f035a49-fd27-4c10-9106-47ed59025ebf",
+      "category": "Empty",
+      "group": "src/Models/UI/giang_test_model"
+    },
+    {
+      "key": "src/Models/UI/test_bugbash_salesforce",
+      "category": "UiModel",
+      "location": "392.0456949966159 485",
+      "isGroup": true
+    },
+    {
+      "key": "src/Models/UI/test_bugbash_salesforce/test_bugbash_salesforce",
+      "category": "UiModel",
+      "group": "src/Models/UI/test_bugbash_salesforce"
+    },
+    {
+      "key": "src/Models/SQL/giang_test",
+      "category": "SqlModel",
+      "location": "392.0456949966159 51",
+      "isGroup": true
+    },
+    {
+      "key": "src/Models/SQL/giang_test/table_1",
+      "category": "SqlModel",
+      "group": "src/Models/SQL/giang_test"
+    },
+    {
+      "key": "src/Models/SQL/test_sql",
+      "category": "SqlModel",
+      "location": "392.0456949966159 557",
+      "isGroup": true
+    },
+    {
+      "key": "src/Models/SQL/test_sql/sf_contacts",
+      "category": "SqlModel",
+      "group": "src/Models/SQL/test_sql"
+    },
+    {
+      "key": "src/Models/SQL/test_sql/table_1",
+      "category": "SqlModel",
+      "group": "src/Models/SQL/test_sql"
+    },
+    {
+      "key": "src/Visualizations/Dashboards/my_dash",
+      "category": "Dashboard",
+      "location": "772.0913899932318 717",
+      "isGroup": true
+    },
+    {
+      "key": "src/Visualizations/Dashboards/my_dash/Tab_1",
+      "category": "Dashboard",
+      "group": "src/Visualizations/Dashboards/my_dash"
+    },
+    {
+      "key": "src/Visualizations/Widgets/ad_spend_monthly",
+      "category": "Widget",
+      "location": "380.0456949966159 666"
+    },
+    {
+      "key": "src/Exports/export_to_csv",
+      "category": "Export",
+      "location": "772.0913899932318 521",
+      "isGroup": true
+    },
+    {
+      "key": "src/Exports/export_to_csv/test_sql___sf_contacts",
+      "category": "Export",
+      "group": "src/Exports/export_to_csv"
+    },
+    {
+      "key": "src/Exports/export_to_sheet",
+      "category": "Export",
+      "location": "772.0913899932318 593",
+      "isGroup": true
+    },
+    {
+      "key": "src/Exports/export_to_sheet/test_sql___sf_contacts",
+      "category": "Export",
+      "group": "src/Exports/export_to_sheet"
+    },
+    {
+      "key": "src/Exports/test",
+      "category": "Export",
+      "location": "12 903",
+      "isGroup": true
+    },
+    {
+      "key": "4ad74c6b-daba-4315-a566-d704cc5f7733",
+      "category": "Empty",
+      "group": "src/Exports/test"
+    }
+  ]
+}
