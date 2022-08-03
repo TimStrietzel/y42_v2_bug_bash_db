@@ -15,5 +15,6 @@
     "user_ids": [],
     "team_ids": []
   },
-  "asset_status": "no status"
+  "asset_status": "no status",
+  "asset_status_message": "<p>&lt;a href=\"www.wikipedia.org\"&gt;Works great!&lt;/a&gt;</p>"
 }
