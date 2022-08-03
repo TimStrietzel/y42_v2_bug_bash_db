@@ -1,0 +1,49 @@
+{
+  "accounts": [
+    {
+      "id": "cloud_function_extract_load_data_set",
+      "name": "cloud_function_extract_load_data_set"
+    },
+    {
+      "id": "y42_csy42v2demospace_d0f7e5c23ca14877be1bfa20066b011b",
+      "name": "y42_csy42v2demospace_d0f7e5c23ca14877be1bfa20066b011b"
+    },
+    {
+      "id": "y42_facebooktemplateuibuilder_8d02f9e4b22a4ba38d890ae72060b300",
+      "name": "y42_facebooktemplateuibuilder_8d02f9e4b22a4ba38d890ae72060b300"
+    },
+    {
+      "id": "y42_facebooktemplateuibuilder_921623d3ca6344249307530d659ce3d5",
+      "name": "y42_facebooktemplateuibuilder_921623d3ca6344249307530d659ce3d5"
+    },
+    {
+      "id": "y42_go_poc_client_template_3_20528a8764b946ed86f5a93171b66543",
+      "name": "y42_go_poc_client_template_3_20528a8764b946ed86f5a93171b66543"
+    },
+    {
+      "id": "y42_go_poc_test_client_1_b8d6a75a35c14e0bbf764bb8428fa973",
+      "name": "y42_go_poc_test_client_1_b8d6a75a35c14e0bbf764bb8428fa973"
+    },
+    {
+      "id": "y42_goclientrolledout1_cfe90019ba854358908cc02031f51dee",
+      "name": "y42_goclientrolledout1_cfe90019ba854358908cc02031f51dee"
+    },
+    {
+      "id": "y42_gopoc_reporting_366936a1046d4341b06897c88c4a00f9",
+      "name": "y42_gopoc_reporting_366936a1046d4341b06897c88c4a00f9"
+    },
+    {
+      "id": "y42_gopoc_template_1_7c6fb78497524ec5a79d71a814081ef4",
+      "name": "y42_gopoc_template_1_7c6fb78497524ec5a79d71a814081ef4"
+    },
+    {
+      "id": "y42_gotemplatespace1_057acf029116488dbbd8344cf02e667d",
+      "name": "y42_gotemplatespace1_057acf029116488dbbd8344cf02e667d"
+    },
+    {
+      "id": "y42_v2bugbash_03e5b9bfc63941ae9de2bc0c658049d0",
+      "name": "y42_v2bugbash_03e5b9bfc63941ae9de2bc0c658049d0"
+    }
+  ],
+  "_signature": "toaxtJuee39GyhukiguTJ89+b2WarOOqLfRa5V6hP/C5FkSCucCuXVXIPo3RcjMY1u3XDjQ/pv3GHXRIwt+tCQ=="
+}
