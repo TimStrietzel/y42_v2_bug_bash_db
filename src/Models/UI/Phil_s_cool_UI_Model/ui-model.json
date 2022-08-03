@@ -278,7 +278,7 @@
             }
           ],
           "groupBy": [
-            "order_month|year"
+            "order_month|month"
           ]
         }
       },
