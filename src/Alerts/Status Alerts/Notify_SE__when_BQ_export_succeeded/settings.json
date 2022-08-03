@@ -1,0 +1,35 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/alert/status-alert-settings.json",
+  "feature_type": "Export",
+  "alert_on": [
+    "success"
+  ],
+  "triggered_by": [
+    "user",
+    "orchestration"
+  ],
+  "title": "bug bash - BQ export available!",
+  "message_body": "<p><strong>Hi,</strong></p><p><br></p><p>bug bash - BQ export <u>available</u> ! {{completed_at}}</p><p><br></p><p>The {{feature_type}}: {{object_name}} was a {{status}} at {{completed_at}}.</p><p>Here is the link to your {{feature_type}}: {{url}}</p><p><br></p><p>Have a nice day,</p><p>Y42</p>",
+  "patterns": [
+    "export_to_BQ"
+  ],
+  "tags": [],
+  "destinations": [
+    {
+      "type": "internal_notification",
+      "user_ids": [
+        "tim.strietzel@y42.com",
+        "braulio.ribeiro@y42.com"
+      ],
+      "team_ids": []
+    },
+    {
+      "type": "email",
+      "custom_emails": [],
+      "user_ids": [],
+      "team_ids": [
+        "a61fa6bf-4bd2-4c68-8728-514fe89b52bd"
+      ]
+    }
+  ]
+}
