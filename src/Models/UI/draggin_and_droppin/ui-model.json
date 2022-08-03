@@ -1,5 +1,232 @@
 {
-  "nodeDataArray": [],
-  "linkDataArray": [],
+  "nodeDataArray": [
+    {
+      "key": "80ecb2df-dd44-441d-aebc-7ad0485be907",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "80ecb2df-dd44-441d-aebc-7ad0485be907",
+        "title": "src/Integrations/mock_data/demo_amazon_ads.csv",
+        "transformationType": "INPUT",
+        "datasourceName": "mock_data",
+        "transformObject": {
+          "source": "src/Integrations/mock_data",
+          "table": "src/Integrations/mock_data/demo_amazon_ads.csv",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-849.1414141414142 -232.4245283018868"
+    },
+    {
+      "key": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "cost",
+            "source": "adspend",
+            "type": "INTEGER",
+            "display": true,
+            "changed": false,
+            "description": "",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-600.6170238975118 -226.2000385059684"
+    },
+    {
+      "key": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "cost_multiplied",
+            "originalString": "@cost * 100",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "BinaryExpression",
+                    "operator": "*",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "@cost",
+                      "range": [
+                        0,
+                        5
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 5
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 100,
+                      "raw": "100",
+                      "range": [
+                        8,
+                        11
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 11
+                        }
+                      }
+                    },
+                    "range": [
+                      0,
+                      11
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 11
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    11
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 11
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                11
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 11
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "@cost",
+                  "range": [
+                    0,
+                    5
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 5
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "*",
+                  "range": [
+                    6,
+                    7
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 7
+                    }
+                  }
+                },
+                {
+                  "type": "Numeric",
+                  "value": "100",
+                  "range": [
+                    8,
+                    11
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 11
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-368.1779995072678 -227.34289564882556"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "to": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "from": "80ecb2df-dd44-441d-aebc-7ad0485be907",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+      "from": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ],
   "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
 }
