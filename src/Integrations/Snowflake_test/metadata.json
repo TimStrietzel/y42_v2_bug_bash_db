@@ -15,5 +15,6 @@
     "user_ids": [],
     "team_ids": []
   },
-  "asset_status": "no status"
+  "asset_status": "draft",
+  "asset_status_message": "<p>Not done yet</p>"
 }
