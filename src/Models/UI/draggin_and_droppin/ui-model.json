@@ -374,6 +374,118 @@
       "isGroup": true,
       "group": "",
       "location": "1061.021069831441 180.35417014759122"
+    },
+    {
+      "key": "e1317eeb-fa85-486f-bc41-b7bdd3cdd566",
+      "type": "PIVOT",
+      "category": "PIVOT",
+      "transformationStep": {
+        "id": "e1317eeb-fa85-486f-bc41-b7bdd3cdd566",
+        "title": "",
+        "transformationType": "PIVOT",
+        "transformObject": {
+          "selectColumns": [
+            "financial_status",
+            "source_name",
+            "total_price_usd"
+          ],
+          "aggregateFunction": "SUM",
+          "aggregateColumn": "total_price_usd",
+          "pivotColumn": "financial_status",
+          "pivotValues": [
+            "paid",
+            "refunded",
+            "partially_refunded",
+            "partially_paid"
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "302.03635031162406 235.27028021832382"
+    },
+    {
+      "key": "690b928d-3db0-417c-8553-da1d42f5b9bf",
+      "type": "REPLACE",
+      "category": "REPLACE",
+      "transformationStep": {
+        "id": "690b928d-3db0-417c-8553-da1d42f5b9bf",
+        "title": "",
+        "transformationType": "REPLACE",
+        "transformObject": [
+          {
+            "target": "refunded",
+            "outputType": "NUMERIC",
+            "manipulationType": "Replace",
+            "manipulation": {
+              "targetColumn": "refunded",
+              "cases": [
+                {
+                  "token": "null",
+                  "fullMatch": false,
+                  "caseSensitive": false,
+                  "replaceWith": "0",
+                  "isNull": true
+                }
+              ]
+            }
+          },
+          {
+            "target": "paid",
+            "outputType": "NUMERIC",
+            "manipulationType": "Replace",
+            "manipulation": {
+              "targetColumn": "paid",
+              "cases": [
+                {
+                  "token": "null",
+                  "fullMatch": false,
+                  "caseSensitive": false,
+                  "replaceWith": "0",
+                  "isNull": true
+                }
+              ]
+            }
+          },
+          {
+            "target": "partially_refunded",
+            "outputType": "NUMERIC",
+            "manipulationType": "Replace",
+            "manipulation": {
+              "targetColumn": "partially_refunded",
+              "cases": [
+                {
+                  "token": "null",
+                  "fullMatch": false,
+                  "caseSensitive": false,
+                  "replaceWith": "0",
+                  "isNull": true
+                }
+              ]
+            }
+          },
+          {
+            "target": "partially_paid",
+            "outputType": "NUMERIC",
+            "manipulationType": "Replace",
+            "manipulation": {
+              "targetColumn": "partially_paid",
+              "cases": [
+                {
+                  "token": "null",
+                  "fullMatch": false,
+                  "caseSensitive": false,
+                  "replaceWith": "0",
+                  "isNull": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "559.6348731968197 320.34308364557575"
     }
   ],
   "linkDataArray": [
@@ -404,6 +516,18 @@
     {
       "to": "30a7243c-a1ef-4f24-a98c-42d4359c39ae",
       "from": "e0e80f03-b9c8-46e4-a191-083eab5ea6b3",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "46f351b5-2c86-4f84-94f1-91848a166dd7",
+      "to": "e1317eeb-fa85-486f-bc41-b7bdd3cdd566",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "690b928d-3db0-417c-8553-da1d42f5b9bf",
+      "from": "e1317eeb-fa85-486f-bc41-b7bdd3cdd566",
       "frompid": "OUT",
       "topid": "IN"
     }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/core/y42-metadata.json",
-  "name": "tabtabtabtabtabtabtabtabt",
+  "name": "new_ui_model_tim",
   "description": "",
   "tags": [],
   "owners": {
@@ -8,11 +8,15 @@
     "team_ids": []
   },
   "experts": {
-    "user_ids": [],
+    "user_ids": [
+      "giang.nguyen@y42.com"
+    ],
     "team_ids": []
   },
   "watchers": {
-    "user_ids": [],
+    "user_ids": [
+      "braulio.ribeiro@y42.com"
+    ],
     "team_ids": []
   },
   "asset_status": "no status"

@@ -1,0 +1,94 @@
+{
+  "nodeDataArray": [
+    {
+      "key": "d006fad2-ceae-457c-86a0-a11e96bd238d",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "d006fad2-ceae-457c-86a0-a11e96bd238d",
+        "title": "table_1",
+        "transformationType": "INPUT",
+        "datasourceName": "Snowflake test",
+        "transformObject": {
+          "source": "src/Integrations/Snowflake_test",
+          "table": "src/Integrations/Snowflake_test/220622085045_ea7fc9fb-d65f-521e-85dd-879373f61f5c",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-742.8512396694215 -418.60377358490564"
+    },
+    {
+      "key": "99c73aa2-2784-41c7-83d3-f822ae3a0260",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "99c73aa2-2784-41c7-83d3-f822ae3a0260",
+        "title": "new_ui_model_tim",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "new_ui_model_tim",
+          "fields": [
+            {
+              "target": "budget_remaining",
+              "source": "budget_remaining",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "name",
+              "source": "name",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "daily_budget",
+              "source": "daily_budget",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "id",
+              "source": "id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-394.93947496353917 -406.5323450134771"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "from": "d006fad2-ceae-457c-86a0-a11e96bd238d",
+      "to": "99c73aa2-2784-41c7-83d3-f822ae3a0260",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ],
+  "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
+}
