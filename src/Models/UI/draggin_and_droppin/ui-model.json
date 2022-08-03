@@ -212,6 +212,68 @@
       "isGroup": true,
       "group": "",
       "location": "-368.1779995072678 -227.34289564882556"
+    },
+    {
+      "key": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
+        "title": "draggin_and_droppin",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "draggin_and_droppin",
+          "fields": [
+            {
+              "target": "cost",
+              "source": "cost",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_date",
+              "source": "order_date",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "last_click_channel",
+              "source": "last_click_channel",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "cost_multiplied",
+              "source": "cost_multiplied",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-115.71199440604028 -229.3485645830659"
     }
   ],
   "linkDataArray": [
@@ -224,6 +286,12 @@
     {
       "to": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
       "from": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
+      "from": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
       "frompid": "OUT",
       "topid": "IN"
     }
