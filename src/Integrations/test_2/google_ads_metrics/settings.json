@@ -1,0 +1,17 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/bigquery/0.0.0/table",
+  "columns": [
+    "cost",
+    "adid",
+    "adgroupid",
+    "campaign",
+    "clicks",
+    "engagements",
+    "impressions",
+    "bouncerate",
+    "day",
+    "views",
+    "interactions"
+  ],
+  "import": "google_ads_metrics"
+}

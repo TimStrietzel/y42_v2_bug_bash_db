@@ -1,10 +1,8 @@
 {
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/core/y42-metadata.json",
-  "name": "draggin_and_droppin",
-  "description": "<p>this is cool</p>",
-  "tags": [
-    "marketing"
-  ],
+  "name": "bing_ad_perfomance_report",
+  "description": "",
+  "tags": [],
   "owners": {
     "user_ids": [],
     "team_ids": []
@@ -17,5 +15,5 @@
     "user_ids": [],
     "team_ids": []
   },
-  "asset_status": "draft"
+  "asset_status": "no status"
 }
