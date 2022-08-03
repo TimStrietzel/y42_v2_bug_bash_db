@@ -1,6 +1,6 @@
 {
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/core/y42-metadata.json",
-  "name": "mock_data",
+  "name": "test_sql",
   "description": "",
   "tags": [],
   "owners": {
@@ -15,6 +15,5 @@
     "user_ids": [],
     "team_ids": []
   },
-  "asset_status": "no status",
-  "asset_status_message": "<p>Not done yet</p>"
+  "asset_status": "no status"
 }

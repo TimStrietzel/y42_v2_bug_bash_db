@@ -1,0 +1,7 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/sql_model/0.0.0/source.json",
+  "tablesOrder": [
+    "table_1",
+    "sf_contacts"
+  ]
+}

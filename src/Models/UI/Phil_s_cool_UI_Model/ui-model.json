@@ -1,0 +1,351 @@
+{
+  "nodeDataArray": [
+    {
+      "key": "4b29d895-41b6-498c-9c56-54662eec161d",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "4b29d895-41b6-498c-9c56-54662eec161d",
+        "title": "src/Integrations/mock_data/demo_amazon_ads.csv",
+        "transformationType": "INPUT",
+        "datasourceName": "mock_data",
+        "transformObject": {
+          "source": "src/Integrations/mock_data",
+          "table": "src/Integrations/mock_data/demo_amazon_ads.csv",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-5741.93388429752 -347.16037735849056"
+    },
+    {
+      "key": "ee20954d-ed1b-41fd-bced-9b7f158f3119",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "ee20954d-ed1b-41fd-bced-9b7f158f3119",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "order_month",
+            "originalString": "DATE_TRUNC(@order_date, \"MONTH\")",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "DATE_TRUNC",
+                      "range": [
+                        0,
+                        10
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 10
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "@order_date",
+                        "range": [
+                          11,
+                          22
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 22
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "\"MONTH\"",
+                        "value": "MONTH",
+                        "range": [
+                          24,
+                          31
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 24
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 31
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      32
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 32
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    32
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 32
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                32
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 32
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "DATE_TRUNC",
+                  "range": [
+                    0,
+                    10
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 10
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    10,
+                    11
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 10
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 11
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@order_date",
+                  "range": [
+                    11,
+                    22
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 22
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    22,
+                    23
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 22
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 23
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "\"MONTH\"",
+                  "range": [
+                    24,
+                    31
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 31
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    31,
+                    32
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 31
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 32
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-5419.345649003402 -302.32364266461303"
+    },
+    {
+      "key": "ffd67139-7902-44c8-a8e9-55575824b72e",
+      "type": "GROUP_BY",
+      "category": "GROUP_BY",
+      "transformationStep": {
+        "id": "ffd67139-7902-44c8-a8e9-55575824b72e",
+        "title": "",
+        "transformationType": "GROUP_BY",
+        "transformObject": {
+          "columns": [
+            {
+              "name": "adspend",
+              "alias": "sum_adspend",
+              "func": "SUM"
+            }
+          ],
+          "groupBy": [
+            "order_month|month"
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-5085.639766650462 -267.07874470542936"
+    },
+    {
+      "key": "b9880217-c5d2-4105-b684-a5850840ac66",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "b9880217-c5d2-4105-b684-a5850840ac66",
+        "title": "phil_s_cool_ui_model",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "phil_s_cool_ui_model",
+          "fields": [
+            {
+              "target": "order_month",
+              "source": "order_month",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sum_adspend",
+              "source": "sum_adspend",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-4778.522119591637 -330.42568348093954"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "from": "4b29d895-41b6-498c-9c56-54662eec161d",
+      "to": "ee20954d-ed1b-41fd-bced-9b7f158f3119",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "ee20954d-ed1b-41fd-bced-9b7f158f3119",
+      "to": "ffd67139-7902-44c8-a8e9-55575824b72e",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "ffd67139-7902-44c8-a8e9-55575824b72e",
+      "to": "b9880217-c5d2-4105-b684-a5850840ac66",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ],
+  "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
+}

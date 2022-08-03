@@ -1,0 +1,412 @@
+{
+  "nodeDataArray": [
+    {
+      "key": "80ecb2df-dd44-441d-aebc-7ad0485be907",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "80ecb2df-dd44-441d-aebc-7ad0485be907",
+        "title": "src/Integrations/mock_data/demo_amazon_ads.csv",
+        "transformationType": "INPUT",
+        "datasourceName": "mock_data",
+        "transformObject": {
+          "source": "src/Integrations/mock_data",
+          "table": "src/Integrations/mock_data/demo_amazon_ads.csv",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "0 0"
+    },
+    {
+      "key": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "cost",
+            "source": "adspend",
+            "type": "INTEGER",
+            "display": true,
+            "changed": false,
+            "description": "",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "247 0"
+    },
+    {
+      "key": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "cost_multiplied",
+            "originalString": "@cost * 100",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "BinaryExpression",
+                    "operator": "*",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "@cost",
+                      "range": [
+                        0,
+                        5
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 5
+                        }
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 100,
+                      "raw": "100",
+                      "range": [
+                        8,
+                        11
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 11
+                        }
+                      }
+                    },
+                    "range": [
+                      0,
+                      11
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 11
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    11
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 11
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                11
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 11
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "@cost",
+                  "range": [
+                    0,
+                    5
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 5
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "*",
+                  "range": [
+                    6,
+                    7
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 7
+                    }
+                  }
+                },
+                {
+                  "type": "Numeric",
+                  "value": "100",
+                  "range": [
+                    8,
+                    11
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 11
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "515 0"
+    },
+    {
+      "key": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
+        "title": "draggin_and_droppin",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "draggin_and_droppin",
+          "fields": [
+            {
+              "target": "cost",
+              "source": "cost",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_date",
+              "source": "order_date",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "last_click_channel",
+              "source": "last_click_channel",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "cost_multiplied",
+              "source": "cost_multiplied",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1030 0"
+    },
+    {
+      "key": "46f351b5-2c86-4f84-94f1-91848a166dd7",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "46f351b5-2c86-4f84-94f1-91848a166dd7",
+        "title": "src/Integrations/test_2/shopify_de",
+        "transformationType": "INPUT",
+        "datasourceName": "test_2",
+        "transformObject": {
+          "source": "src/Integrations/test_2",
+          "table": "src/Integrations/test_2/shopify_de",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "10.647936016511867 188.06077395870633"
+    },
+    {
+      "key": "e0e80f03-b9c8-46e4-a191-083eab5ea6b3",
+      "type": "SORT",
+      "category": "SORT",
+      "transformationStep": {
+        "id": "e0e80f03-b9c8-46e4-a191-083eab5ea6b3",
+        "title": "",
+        "transformationType": "SORT",
+        "transformObject": [
+          {
+            "target": "order_date",
+            "order": "DESC"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "801.6235810113519 180.0137993794009"
+    },
+    {
+      "key": "30a7243c-a1ef-4f24-a98c-42d4359c39ae",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "30a7243c-a1ef-4f24-a98c-42d4359c39ae",
+        "title": "draggin_and_droppin_sorted_by_date",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "draggin_and_droppin_sorted_by_date",
+          "fields": [
+            {
+              "target": "cost",
+              "source": "cost",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_date",
+              "source": "order_date",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "last_click_channel",
+              "source": "last_click_channel",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "cost_multiplied",
+              "source": "cost_multiplied",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1061.021069831441 180.35417014759122"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "to": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "from": "80ecb2df-dd44-441d-aebc-7ad0485be907",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+      "from": "654109f7-8274-4b3f-bfb3-6f2595ebdd54",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "e8cfbee3-aef0-4425-a8d0-2cfbb409885e",
+      "from": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "8d255faa-e61e-4e15-859e-d9a658bdfaaa",
+      "to": "e0e80f03-b9c8-46e4-a191-083eab5ea6b3",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "30a7243c-a1ef-4f24-a98c-42d4359c39ae",
+      "from": "e0e80f03-b9c8-46e4-a191-083eab5ea6b3",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ],
+  "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
+}
