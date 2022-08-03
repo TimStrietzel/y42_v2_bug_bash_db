@@ -1,0 +1,8 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/salesforce/0.0.0/table",
+  "columns": [
+    "Id",
+    "Related_Renewal_Opportunity__c"
+  ],
+  "import": "Customer_Reviews__c"
+}

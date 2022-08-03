@@ -1,0 +1,27 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/salesforce/0.0.0/table",
+  "columns": [
+    "Id",
+    "IsDeleted",
+    "Name",
+    "CurrencyIsoCode",
+    "CreatedDate",
+    "CreatedById",
+    "LastModifiedDate",
+    "LastModifiedById",
+    "SystemModstamp",
+    "LastActivityDate",
+    "LastViewedDate",
+    "LastReferencedDate",
+    "Parent_Opportunity__c",
+    "Pause_Start_Date__c",
+    "Pause_End_Date__c",
+    "Pause_Term__c",
+    "MRR_During_Pause__c",
+    "MRR_Discount_During_Pause__c",
+    "Tot_Pause_Discount__c",
+    "Pause_Number__c",
+    "Is_Pause_Live__c"
+  ],
+  "import": "Opportunity_Contract_Pause__c"
+}

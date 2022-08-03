@@ -1,0 +1,9 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/salesforce/0.0.0/table",
+  "columns": [
+    "Id",
+    "Contact__c",
+    "Linked_Contact_Record__c"
+  ],
+  "import": "Y42_org_user__c"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/salesforce/0.0.0/table",
+  "columns": [
+    "Id",
+    "IsDeleted",
+    "Name",
+    "CurrencyIsoCode",
+    "CreatedDate",
+    "CreatedById",
+    "LastModifiedDate",
+    "LastModifiedById",
+    "SystemModstamp",
+    "LastActivityDate",
+    "LastViewedDate",
+    "LastReferencedDate",
+    "CurrentActivationScore__c",
+    "Account__c",
+    "Number_of_users__c",
+    "Model_Score_past_7_days__c",
+    "Activity_Score_past_7_days__c",
+    "Dashboard_Score_past_7_days__c",
+    "Created_at_Date__c",
+    "Days_to_Activation__c",
+    "Last_Activity_Date_recorded__c",
+    "Days_since_last_activity__c",
+    "Model_Activation_Score__c",
+    "Integrate_Activation_Score__c",
+    "Visualize_Activation_Score__c",
+    "Orchestrate_Activation_Score__c",
+    "is_activated__c"
+  ],
+  "import": "Y42_org__c"
+}
