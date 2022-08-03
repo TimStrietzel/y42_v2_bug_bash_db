@@ -1,0 +1,7 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-dashboard-settings.json",
+  "theme": "src/Visualizations/Themes/test flo-33bfb6f2-60e5-41ce-972c-749819e99482.json",
+  "order": [
+    "src/Visualizations/Dashboards/test_flo/Tab_1"
+  ]
+}

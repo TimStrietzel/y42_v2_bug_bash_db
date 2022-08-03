@@ -1,0 +1,400 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-widget-settings.json",
+  "chart_type": "table",
+  "settings": {
+    "series": [
+      {
+        "field_id": "410f629f_0dd6_4ca0_80c1_4a7dc1e8d3ba",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "#00000000",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": true,
+        "showInPercentage": false,
+        "sort": "asc"
+      },
+      {
+        "field_id": "5df4bf1a_805e_4b34_a346_a0658a995dd2",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "#00000000",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": true
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "0o",
+        "showAggregationText": true,
+        "showInPercentage": false,
+        "sort": "asc",
+        "formatConfig": {
+          "numeralFormat": "0o",
+          "formatType": "NUMBER",
+          "decimalPlaces": 0,
+          "negativeSymbol": {
+            "show": true,
+            "type": "symbol"
+          },
+          "displayType": "ORDINAL_NUMBERS",
+          "separator": "NONE",
+          "locale": "",
+          "prefixOrSuffix": "suffix",
+          "customFormat": ""
+        }
+      }
+    ],
+    "dimensions": [
+      {
+        "field_id": "11c8ab5b_c4bf_4233_b23d_c30c40422180",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "#00000000",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 20,
+          "align": "right",
+          "fontStyle": "italic",
+          "fontWeight": "bold",
+          "verticalAlign": "middle",
+          "fontFamily": "Calibri",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": true
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "(0o)",
+        "showAggregationText": true,
+        "showInPercentage": false,
+        "sort": "asc",
+        "formatConfig": {
+          "numeralFormat": "(0o)",
+          "formatType": "NUMBER",
+          "decimalPlaces": 0,
+          "negativeSymbol": {
+            "show": true,
+            "type": "bracket"
+          },
+          "displayType": "ORDINAL_NUMBERS",
+          "separator": "NONE",
+          "locale": "",
+          "prefixOrSuffix": "suffix",
+          "customFormat": ""
+        }
+      },
+      {
+        "field_id": "b076b61c_4d13_408b_8e21_3dbdd22dc9a3",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": true,
+        "showInPercentage": false,
+        "sort": "asc"
+      }
+    ],
+    "breakdowns": [],
+    "columnState": [
+      {
+        "colId": "ag-Grid-AutoColumn-closedate",
+        "width": 200,
+        "hide": false,
+        "pinned": null,
+        "sort": null,
+        "sortIndex": null,
+        "aggFunc": null,
+        "rowGroup": false,
+        "rowGroupIndex": null,
+        "pivot": false,
+        "pivotIndex": null,
+        "flex": null
+      },
+      {
+        "colId": "ag-Grid-AutoColumn-opportunity_owner_email_c",
+        "width": 200,
+        "hide": false,
+        "pinned": null,
+        "sort": null,
+        "sortIndex": null,
+        "aggFunc": null,
+        "rowGroup": false,
+        "rowGroupIndex": null,
+        "pivot": false,
+        "pivotIndex": null,
+        "flex": null
+      },
+      {
+        "colId": "mrr_c",
+        "width": 200,
+        "hide": false,
+        "pinned": null,
+        "sort": null,
+        "sortIndex": null,
+        "aggFunc": "SUM",
+        "rowGroup": false,
+        "rowGroupIndex": null,
+        "pivot": false,
+        "pivotIndex": null,
+        "flex": null
+      },
+      {
+        "colId": "accountid",
+        "width": 200,
+        "hide": false,
+        "pinned": null,
+        "sort": null,
+        "sortIndex": null,
+        "aggFunc": "COUNT",
+        "rowGroup": false,
+        "rowGroupIndex": null,
+        "pivot": false,
+        "pivotIndex": null,
+        "flex": null
+      },
+      {
+        "colId": "closedate",
+        "width": 200,
+        "hide": true,
+        "pinned": null,
+        "sort": null,
+        "sortIndex": null,
+        "aggFunc": "YEAR",
+        "rowGroup": true,
+        "rowGroupIndex": 0,
+        "pivot": false,
+        "pivotIndex": null,
+        "flex": null
+      },
+      {
+        "colId": "opportunity_owner_email_c",
+        "width": 200,
+        "hide": true,
+        "pinned": null,
+        "sort": null,
+        "sortIndex": null,
+        "aggFunc": "VALUE",
+        "rowGroup": true,
+        "rowGroupIndex": 1,
+        "pivot": false,
+        "pivotIndex": null,
+        "flex": null
+      }
+    ],
+    "groupExpandedKeys": [
+      "2021"
+    ],
+    "suppressMovable": false,
+    "paging": true,
+    "sortable": true,
+    "resizable": true,
+    "showFooterTotal": true,
+    "rowSettings": {
+      "backgroundColor": "#00000000",
+      "borderColor": "#000000",
+      "borderWidth": 1,
+      "fontSize": 14,
+      "align": "center",
+      "fontStyle": "normal",
+      "fontWeight": "normal",
+      "verticalAlign": "middle",
+      "fontFamily": "Calibri",
+      "borderRadius": 0,
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "color": "#cddc39",
+      "colorTo": "#a7a7a7",
+      "borderPosition": "noneBorder",
+      "wordBreak": "keepAll",
+      "activeStyles": true
+    }
+  },
+  "datasource_table_path": "src/Models/UI/test_bugbash_salesforce/test_bugbash_salesforce",
+  "filters": [],
+  "fields": [
+    {
+      "field": "mrr_c",
+      "aggregation": "SUM",
+      "type": "FLOAT",
+      "alias": "SUM_mrr_c_410f629f_0dd6_4ca0_80c1_4a7dc1e8d3ba",
+      "id": "410f629f_0dd6_4ca0_80c1_4a7dc1e8d3ba",
+      "lowCodeString": null,
+      "functionTree": null,
+      "show_in_percentage": false,
+      "filters": []
+    },
+    {
+      "field": "accountid",
+      "aggregation": "COUNT",
+      "type": "STRING",
+      "alias": "COUNT_accountid_5df4bf1a_805e_4b34_a346_a0658a995dd2",
+      "id": "5df4bf1a_805e_4b34_a346_a0658a995dd2",
+      "lowCodeString": null,
+      "functionTree": null,
+      "show_in_percentage": false,
+      "filters": []
+    },
+    {
+      "field": "opportunity_owner_email_c",
+      "aggregation": "VALUE",
+      "type": "STRING",
+      "alias": "VALUE_opportunity_owner_email_c_b076b61c_4d13_408b_8e21_3dbdd22dc9a3",
+      "id": "b076b61c_4d13_408b_8e21_3dbdd22dc9a3",
+      "lowCodeString": null,
+      "functionTree": null,
+      "show_in_percentage": false,
+      "filters": []
+    },
+    {
+      "field": "closedate",
+      "aggregation": "YEAR",
+      "type": "DATE",
+      "alias": "YEAR_closedate_11c8ab5b_c4bf_4233_b23d_c30c40422180",
+      "id": "11c8ab5b_c4bf_4233_b23d_c30c40422180",
+      "lowCodeString": null,
+      "functionTree": null,
+      "show_in_percentage": false,
+      "filters": []
+    }
+  ]
+}
