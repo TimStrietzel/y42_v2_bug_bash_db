@@ -1,5 +1,2146 @@
 {
-  "nodeDataArray": [],
-  "linkDataArray": [],
+  "nodeDataArray": [
+    {
+      "key": "77d076af-c71c-4923-b000-da4aef10103a",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "77d076af-c71c-4923-b000-da4aef10103a",
+        "title": "Opportunity\n",
+        "transformationType": "INPUT",
+        "datasourceName": "test-flo-bugbash",
+        "transformObject": {
+          "source": "src/Integrations/test_flo_bugbash",
+          "table": "src/Integrations/test_flo_bugbash/Opportunity",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-528.1900826446281 -221.173616695023"
+    },
+    {
+      "key": "e36dad89-e604-4b0d-ae4f-ce189b058dd1",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "e36dad89-e604-4b0d-ae4f-ce189b058dd1",
+        "title": "src/Integrations/test_flo_bugbash/Y42_org__c",
+        "transformationType": "INPUT",
+        "datasourceName": "test-flo-bugbash",
+        "transformObject": {
+          "source": "src/Integrations/test_flo_bugbash",
+          "table": "src/Integrations/test_flo_bugbash/Y42_org__c",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-525.694214876033 -43.27358490566036"
+    },
+    {
+      "key": "8baac970-472b-4ef9-adca-2ad895b24279",
+      "type": "JOIN",
+      "category": "JOIN",
+      "transformationStep": {
+        "id": "8baac970-472b-4ef9-adca-2ad895b24279",
+        "title": "",
+        "transformationType": "JOIN",
+        "transformObject": {
+          "type": "left",
+          "left": "77d076af-c71c-4923-b000-da4aef10103a",
+          "right": "e36dad89-e604-4b0d-ae4f-ce189b058dd1",
+          "joinConditions": [
+            {
+              "left": "accountid",
+              "right": "account_c"
+            }
+          ],
+          "customMapping": {
+            "id": "org_id",
+            "isdeleted": "org_isdeleted",
+            "name": "org_name",
+            "currencyisocode": "org_currencyisocode",
+            "createddate": "org_createddate",
+            "createdbyid": "org_createdbyid",
+            "lastmodifieddate": "org_lastmodifieddate",
+            "lastmodifiedbyid": "org_lastmodifiedbyid",
+            "systemmodstamp": "org_systemmodstamp",
+            "lastactivitydate": "org_lastactivitydate",
+            "lastvieweddate": "org_lastvieweddate",
+            "lastreferenceddate": "org_lastreferenceddate"
+          }
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-244.97156052503647 -187.20319263707637"
+    },
+    {
+      "key": "54027262-8cf1-4ac9-8637-17b29f9b6862",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "54027262-8cf1-4ac9-8637-17b29f9b6862",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "days_since_created",
+            "originalString": "DATE_DIFF( \n    CONVERT_TO_DATE(@createddate),\n    PARSE_DATE(\"2022-08-03\", \"%Y-%m-%d\"),\n    \"DAY\"\n    )",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "DATE_DIFF",
+                      "range": [
+                        0,
+                        9
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 9
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "CONVERT_TO_DATE",
+                          "range": [
+                            16,
+                            31
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 19
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "@createddate",
+                            "range": [
+                              32,
+                              44
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 2,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 2,
+                                "column": 32
+                              }
+                            }
+                          }
+                        ],
+                        "optional": false,
+                        "range": [
+                          16,
+                          45
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 33
+                          }
+                        }
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "PARSE_DATE",
+                          "range": [
+                            51,
+                            61
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 3,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 3,
+                              "column": 14
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "raw": "\"2022-08-03\"",
+                            "value": "2022-08-03",
+                            "range": [
+                              62,
+                              74
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 3,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 3,
+                                "column": 27
+                              }
+                            }
+                          },
+                          {
+                            "type": "Literal",
+                            "raw": "\"%Y-%m-%d\"",
+                            "value": "%Y-%m-%d",
+                            "range": [
+                              76,
+                              86
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 3,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 3,
+                                "column": 39
+                              }
+                            }
+                          }
+                        ],
+                        "optional": false,
+                        "range": [
+                          51,
+                          87
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 40
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "\"DAY\"",
+                        "value": "DAY",
+                        "range": [
+                          93,
+                          98
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 9
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      104
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 5
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    104
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                104
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 5,
+                  "column": 5
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "DATE_DIFF",
+                  "range": [
+                    0,
+                    9
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 9
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    9,
+                    10
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 10
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "CONVERT_TO_DATE",
+                  "range": [
+                    16,
+                    31
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 19
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    31,
+                    32
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 19
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 20
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@createddate",
+                  "range": [
+                    32,
+                    44
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 20
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 32
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    44,
+                    45
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 32
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 33
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    45,
+                    46
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 33
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 34
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "PARSE_DATE",
+                  "range": [
+                    51,
+                    61
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 14
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    61,
+                    62
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 15
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "\"2022-08-03\"",
+                  "range": [
+                    62,
+                    74
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 27
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    74,
+                    75
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 27
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 28
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "\"%Y-%m-%d\"",
+                  "range": [
+                    76,
+                    86
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 39
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    86,
+                    87
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 39
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 40
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    87,
+                    88
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 40
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 41
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "\"DAY\"",
+                  "range": [
+                    93,
+                    98
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 9
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    103,
+                    104
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "50.65447253281468 -174.79502937177028"
+    },
+    {
+      "key": "23540a28-f55c-413c-bd14-32ef4950dcaa",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "23540a28-f55c-413c-bd14-32ef4950dcaa",
+        "title": "test_bugbash_salesforce",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "test_bugbash_salesforce",
+          "fields": [
+            {
+              "target": "id",
+              "source": "id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "isdeleted",
+              "source": "isdeleted",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "accountid",
+              "source": "accountid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "recordtypeid",
+              "source": "recordtypeid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "name",
+              "source": "name",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "description",
+              "source": "description",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "stagename",
+              "source": "stagename",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "amount",
+              "source": "amount",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "probability",
+              "source": "probability",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "closedate",
+              "source": "closedate",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "type",
+              "source": "type",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "nextstep",
+              "source": "nextstep",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "leadsource",
+              "source": "leadsource",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "isclosed",
+              "source": "isclosed",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "iswon",
+              "source": "iswon",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "forecastcategory",
+              "source": "forecastcategory",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "forecastcategoryname",
+              "source": "forecastcategoryname",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "currencyisocode",
+              "source": "currencyisocode",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "campaignid",
+              "source": "campaignid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hasopportunitylineitem",
+              "source": "hasopportunitylineitem",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "pricebook2id",
+              "source": "pricebook2id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "ownerid",
+              "source": "ownerid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "createddate",
+              "source": "createddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "createdbyid",
+              "source": "createdbyid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastmodifieddate",
+              "source": "lastmodifieddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastmodifiedbyid",
+              "source": "lastmodifiedbyid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "systemmodstamp",
+              "source": "systemmodstamp",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastactivitydate",
+              "source": "lastactivitydate",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "laststagechangedate",
+              "source": "laststagechangedate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fiscalquarter",
+              "source": "fiscalquarter",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fiscalyear",
+              "source": "fiscalyear",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fiscal",
+              "source": "fiscal",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "contactid",
+              "source": "contactid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastvieweddate",
+              "source": "lastvieweddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastreferenceddate",
+              "source": "lastreferenceddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "syncedquoteid",
+              "source": "syncedquoteid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hasopenactivity",
+              "source": "hasopenactivity",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hasoverduetask",
+              "source": "hasoverduetask",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastamountchangedhistoryid",
+              "source": "lastamountchangedhistoryid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "lastclosedatechangedhistoryid",
+              "source": "lastclosedatechangedhistoryid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_currency_c",
+              "source": "customer_currency_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "num_users_equiv_allowed_c",
+              "source": "num_users_equiv_allowed_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "num_users_view_allowed_c",
+              "source": "num_users_view_allowed_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "discount_amount_c",
+              "source": "discount_amount_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebee_subscription_link_c",
+              "source": "chargebee_subscription_link_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "won_reason_c",
+              "source": "won_reason_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_deal_id_c",
+              "source": "hs_deal_id_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_decision_making_process_c",
+              "source": "hs_decision_making_process_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_expectations_del_c",
+              "source": "hs_expectations_del_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "relevant_free_months_c",
+              "source": "relevant_free_months_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_proof_of_concept_poc_del_c",
+              "source": "hs_proof_of_concept_poc_del_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_tot_contract_initial_free_months_c",
+              "source": "hs_tot_contract_initial_free_months_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_needs_and_pain_points_del_c",
+              "source": "hs_needs_and_pain_points_del_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_objections_c",
+              "source": "hs_objections_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_poc_customer_owner_del_c",
+              "source": "hs_poc_customer_owner_del_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_poc_start_date_del_c",
+              "source": "hs_poc_start_date_del_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_poc_end_date_del_c",
+              "source": "hs_poc_end_date_del_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_poc_scope_del_c",
+              "source": "hs_poc_scope_del_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "tech_stack_and_internal_processes_del_c",
+              "source": "tech_stack_and_internal_processes_del_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "loss_reason_c",
+              "source": "loss_reason_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_owner_email_c",
+              "source": "hs_owner_email_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "subscription_type_c",
+              "source": "subscription_type_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "y42_org_c",
+              "source": "y42_org_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "opportunity_seconday_owner_c",
+              "source": "opportunity_seconday_owner_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "renewal_version_c",
+              "source": "renewal_version_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "renewal_version_number_c",
+              "source": "renewal_version_number_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "upsell_recorded_in_next_renewal_c",
+              "source": "upsell_recorded_in_next_renewal_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "contract_start_date_c",
+              "source": "contract_start_date_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "contract_end_date_c",
+              "source": "contract_end_date_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "renewal_date_c",
+              "source": "renewal_date_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "renewal_months_c",
+              "source": "renewal_months_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "mrr_c",
+              "source": "mrr_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "num_sources_allowed_c",
+              "source": "num_sources_allowed_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "num_users_edit_allowed_c",
+              "source": "num_users_edit_allowed_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "gb_allowed_c",
+              "source": "gb_allowed_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_deal_url_c",
+              "source": "hs_deal_url_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_quote_link_c",
+              "source": "hs_quote_link_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "prolongation_confidence_c",
+              "source": "prolongation_confidence_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "contract_end_date_changed_c",
+              "source": "contract_end_date_changed_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "prolongation_probability_c",
+              "source": "prolongation_probability_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "is_poc_c",
+              "source": "is_poc_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "upsell_mrr_c",
+              "source": "upsell_mrr_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "old_contract_mrr_c",
+              "source": "old_contract_mrr_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "is_paused_c",
+              "source": "is_paused_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "serving_model_c",
+              "source": "serving_model_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "original_contract_end_date_c",
+              "source": "original_contract_end_date_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "hs_is_trial_c",
+              "source": "hs_is_trial_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "contract_term_in_months_c",
+              "source": "contract_term_in_months_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "handover_to_cs_is_done_c",
+              "source": "handover_to_cs_is_done_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "project_working_space_clickup_link_c",
+              "source": "project_working_space_clickup_link_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "link_to_implementation_plan_c",
+              "source": "link_to_implementation_plan_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "link_to_slack_channel_c",
+              "source": "link_to_slack_channel_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "region_c",
+              "source": "region_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "opportunity_owner_email_c",
+              "source": "opportunity_owner_email_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebeeapps_cb_opportunity_type_c",
+              "source": "chargebeeapps_cb_opportunity_type_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebeeapps_cb_subscription_id_c",
+              "source": "chargebeeapps_cb_subscription_id_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebeeapps_coupon_c",
+              "source": "chargebeeapps_coupon_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebeeapps_ct_term_id_c",
+              "source": "chargebeeapps_ct_term_id_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebeeapps_subscription_id_c",
+              "source": "chargebeeapps_subscription_id_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "chargebeeapps_update_chargebee_c",
+              "source": "chargebeeapps_update_chargebee_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "churn_reason_c",
+              "source": "churn_reason_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "churn_reason_details_c",
+              "source": "churn_reason_details_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "is_current_contract_c",
+              "source": "is_current_contract_c",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "upsell_type_c",
+              "source": "upsell_type_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "y42_fiscal_period_booking_c",
+              "source": "y42_fiscal_period_booking_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "y42_fiscal_period_billing_start_c",
+              "source": "y42_fiscal_period_billing_start_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "y42_fiscal_period_billing_end_c",
+              "source": "y42_fiscal_period_billing_end_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_id",
+              "source": "org_id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_isdeleted",
+              "source": "org_isdeleted",
+              "type": "BOOLEAN",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_name",
+              "source": "org_name",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_currencyisocode",
+              "source": "org_currencyisocode",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_createddate",
+              "source": "org_createddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_createdbyid",
+              "source": "org_createdbyid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_lastmodifieddate",
+              "source": "org_lastmodifieddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_lastmodifiedbyid",
+              "source": "org_lastmodifiedbyid",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_systemmodstamp",
+              "source": "org_systemmodstamp",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_lastactivitydate",
+              "source": "org_lastactivitydate",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_lastvieweddate",
+              "source": "org_lastvieweddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "org_lastreferenceddate",
+              "source": "org_lastreferenceddate",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "currentactivationscore_c",
+              "source": "currentactivationscore_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "account_c",
+              "source": "account_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "number_of_users_c",
+              "source": "number_of_users_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "model_score_past_7_days_c",
+              "source": "model_score_past_7_days_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "activity_score_past_7_days_c",
+              "source": "activity_score_past_7_days_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "dashboard_score_past_7_days_c",
+              "source": "dashboard_score_past_7_days_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "created_at_date_c",
+              "source": "created_at_date_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "days_to_activation_c",
+              "source": "days_to_activation_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "last_activity_date_recorded_c",
+              "source": "last_activity_date_recorded_c",
+              "type": "DATE",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "days_since_last_activity_c",
+              "source": "days_since_last_activity_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "model_activation_score_c",
+              "source": "model_activation_score_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "integrate_activation_score_c",
+              "source": "integrate_activation_score_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "visualize_activation_score_c",
+              "source": "visualize_activation_score_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "orchestrate_activation_score_c",
+              "source": "orchestrate_activation_score_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "is_activated_c",
+              "source": "is_activated_c",
+              "type": "FLOAT",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "days_since_created",
+              "source": "days_since_created",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "352.5263125911522 -163.50931508605606"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "from": "77d076af-c71c-4923-b000-da4aef10103a",
+      "to": "8baac970-472b-4ef9-adca-2ad895b24279",
+      "frompid": "OUT",
+      "topid": "L"
+    },
+    {
+      "from": "e36dad89-e604-4b0d-ae4f-ce189b058dd1",
+      "to": "8baac970-472b-4ef9-adca-2ad895b24279",
+      "frompid": "OUT",
+      "topid": "R"
+    },
+    {
+      "to": "54027262-8cf1-4ac9-8637-17b29f9b6862",
+      "from": "8baac970-472b-4ef9-adca-2ad895b24279",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "23540a28-f55c-413c-bd14-32ef4950dcaa",
+      "from": "54027262-8cf1-4ac9-8637-17b29f9b6862",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ],
   "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
 }
