@@ -1,6 +1,6 @@
 {
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/alert/status-alert-settings.json",
-  "feature_type": "Export",
+  "feature_type": "UI-Model",
   "alert_on": [
     "success"
   ],
@@ -8,10 +8,10 @@
     "user",
     "orchestration"
   ],
-  "title": "bug bash - BQ export available!",
-  "message_body": "<p><strong>Hi,</strong></p><p><br></p><p>bug bash - BQ export <u>available</u> ! {{completed_at}}</p><p><br></p><p>The {{feature_type}}: {{object_name}} was a {{status}} at {{completed_at}}.</p><p>Here is the link to your {{feature_type}}: {{url}}</p><p><br></p><p>Have a nice day,</p><p>Y42</p>",
+  "title": "bug bash - Tim test table available!",
+  "message_body": "<p><strong>Hi,</strong></p><p><br></p><p>bug bash - Tim test table <u>available</u> ! {{completed_at}}</p><p><br></p><p>The {{feature_type}}: {{object_name}} was a {{status}} at {{completed_at}}.</p><p>Here is the link to your {{feature_type}}: {{url}}</p><p><br></p><p>Have a nice day,</p><p>Y42</p>",
   "patterns": [
-    "export_to_BQ"
+    "new_UI_model_tim"
   ],
   "tags": [],
   "destinations": [
