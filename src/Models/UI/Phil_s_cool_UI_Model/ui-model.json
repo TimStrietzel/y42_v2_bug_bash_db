@@ -278,13 +278,13 @@
             }
           ],
           "groupBy": [
-            "order_month|month"
+            "order_month|year"
           ]
         }
       },
       "isGroup": true,
       "group": "",
-      "location": "-5162.086825473992 -266.01697999954706"
+      "location": "-5085.639766650462 -267.07874470542936"
     },
     {
       "key": "b9880217-c5d2-4105-b684-a5850840ac66",
