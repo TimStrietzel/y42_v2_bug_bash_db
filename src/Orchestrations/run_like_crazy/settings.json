@@ -1,0 +1,8 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/orchestration/orchestration-settings.json",
+  "cronExpression": "",
+  "forceSchedule": false,
+  "linkDataArray": [],
+  "nodeDataArray": [],
+  "visualDataArray": []
+}
