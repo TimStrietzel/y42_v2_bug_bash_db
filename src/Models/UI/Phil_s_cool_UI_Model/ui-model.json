@@ -1,5 +1,19 @@
 {
-  "nodeDataArray": [],
+  "nodeDataArray": [
+    {
+      "key": "4b29d895-41b6-498c-9c56-54662eec161d",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "4b29d895-41b6-498c-9c56-54662eec161d",
+        "title": "",
+        "transformationType": "INPUT"
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-5327.93388429752 -240.16037735849056"
+    }
+  ],
   "linkDataArray": [],
   "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
 }
