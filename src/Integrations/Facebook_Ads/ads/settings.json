@@ -1,0 +1,30 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/facebook/0.0.0/table",
+  "columns": [
+    "bid_type",
+    "account_id",
+    "campaign_id",
+    "adset_id",
+    "adlabels",
+    "bid_amount",
+    "bid_info",
+    "status",
+    "creative",
+    "id",
+    "updated_time",
+    "created_time",
+    "name",
+    "targeting",
+    "effective_status",
+    "last_updated_by_app_id",
+    "recommendations",
+    "source_ad_id",
+    "tracking_specs",
+    "conversion_specs"
+  ],
+  "import": "ads",
+  "_datos_write_settings": {
+    "max_flatten_depth": 0,
+    "decimals": false
+  }
+}
