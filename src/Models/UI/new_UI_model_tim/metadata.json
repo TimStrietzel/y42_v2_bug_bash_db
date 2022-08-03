@@ -12,7 +12,9 @@
     "team_ids": []
   },
   "watchers": {
-    "user_ids": [],
+    "user_ids": [
+      "tim.strietzel@y42.com"
+    ],
     "team_ids": []
   },
   "asset_status": "no status"
