@@ -1,0 +1,10 @@
+{
+  "$schema": "https://s.dev.y42.dev/integrations/snowflake/0.0.0/table",
+  "columns": [
+    "budget_remaining",
+    "name",
+    "daily_budget",
+    "id"
+  ],
+  "import": "220622085045_ea7fc9fb-d65f-521e-85dd-879373f61f5c"
+}
