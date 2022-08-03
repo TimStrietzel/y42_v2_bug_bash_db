@@ -17,5 +17,6 @@
     ],
     "team_ids": []
   },
-  "asset_status": "no status"
+  "asset_status": "verified",
+  "asset_status_message": "<p>Works great!</p>"
 }
