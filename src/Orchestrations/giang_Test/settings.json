@@ -2,7 +2,44 @@
   "$schema": "https://s.dev.y42.dev/frontend/0.0.2/orchestration/orchestration-settings.json",
   "cronExpression": "",
   "forceSchedule": false,
-  "linkDataArray": [],
-  "nodeDataArray": [],
+  "linkDataArray": [
+    {
+      "from": "4d964227-d888-44cc-a7ed-27df07c4fbe9",
+      "to": "87779405-cee2-466b-855a-d37902dcfa9a"
+    },
+    {
+      "from": "c4dda41c-95d6-4825-8a6b-8a64c3d67f4d",
+      "to": "87779405-cee2-466b-855a-d37902dcfa9a"
+    }
+  ],
+  "nodeDataArray": [
+    {
+      "key": "87779405-cee2-466b-855a-d37902dcfa9a",
+      "path": "src/Models/SQL/giang_test/table_1",
+      "location": "524.0456949966158 0",
+      "onFailure": "stop",
+      "nodeConfig": {
+        "incremental": true
+      }
+    },
+    {
+      "key": "4d964227-d888-44cc-a7ed-27df07c4fbe9",
+      "path": "src/Integrations/Facebook_Ads/ads_insights",
+      "location": "0 0",
+      "onFailure": "stop",
+      "nodeConfig": {
+        "incremental": true
+      }
+    },
+    {
+      "key": "c4dda41c-95d6-4825-8a6b-8a64c3d67f4d",
+      "path": "src/Integrations/Facebook_Ads/ads",
+      "location": "0 62",
+      "onFailure": "stop",
+      "nodeConfig": {
+        "incremental": true
+      }
+    }
+  ],
   "visualDataArray": []
 }

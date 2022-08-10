@@ -1,5 +1,17 @@
 {
-  "nodeDataArray": [],
+  "nodeDataArray": [
+    {
+      "key": "9fb73459-c33c-481b-a3fb-40f874c4551a",
+      "isSidebarType": true,
+      "version": 1,
+      "category": "pinNode",
+      "location": "341 -94",
+      "layerName": "",
+      "zOrder": {
+        "class": "NaN"
+      }
+    }
+  ],
   "linkDataArray": [],
   "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
 }

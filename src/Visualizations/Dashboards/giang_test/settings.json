@@ -1,0 +1,8 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-dashboard-settings.json",
+  "theme": "src/Visualizations/Themes/giang_test-a5f5f310-5a99-4f3b-800a-13d033647e88.json",
+  "order": [
+    "src/Visualizations/Dashboards/giang_test/Tab_1"
+  ],
+  "last_used_datasource_table_path": "src/Integrations/Facebook_Ads/ads_insights"
+}

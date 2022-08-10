@@ -1,0 +1,33 @@
+{
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-canvas-element.json",
+  "type": "Shape",
+  "position": {
+    "x": 59,
+    "y": 43
+  },
+  "size": {
+    "height": 645,
+    "width": 1295
+  },
+  "zIndex": -3,
+  "layer": "default",
+  "angle": 0,
+  "typeSettings": {
+    "shapePath": "M 512 512 H 0 V 0 h 512 v 512 Z"
+  },
+  "styles": {
+    "background-color": "#6fd8b2",
+    "border-color": "#5a9deb",
+    "border-style": "none",
+    "border-width": "1",
+    "border-radius": "0",
+    "filter": "drop-shadow(0px 0px 0px #939393)"
+  },
+  "locked": false,
+  "objectProperties": {
+    "resizable": true,
+    "movable": true,
+    "selectable": true,
+    "rotatable": true
+  }
+}
