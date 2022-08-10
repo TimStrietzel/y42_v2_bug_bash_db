@@ -26,7 +26,8 @@
     {
       "type": "email",
       "custom_emails": [
-        "tim.strietzel@y42.com "
+        "tim.strietzel@y42.com ",
+        "braulio.riberio@y42.com "
       ],
       "user_ids": [],
       "team_ids": [
