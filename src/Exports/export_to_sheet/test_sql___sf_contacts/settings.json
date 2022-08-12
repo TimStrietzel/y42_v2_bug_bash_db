@@ -1,5 +1,5 @@
 {
-  "$schema": "https://s.dev.y42.dev/exports/google_sheets/0.0.0/table",
-  "datasource_table": "src/Models/SQL/test_sql/sf_contacts",
-  "sheet_id": "1ipWM8l5Ji5L_xMDuh9k0CEr4XfFyJ4Bqn2k9LO6gPVs"
+  "$schema": "https://s.dev.y42.dev/exports/google_sheets/0.0.1/table",
+  "sheet_id": "1ipWM8l5Ji5L_xMDuh9k0CEr4XfFyJ4Bqn2k9LO6gPVs",
+  "datasource_table_path": "src/Models/SQL/test_sql/sf_contacts"
 }

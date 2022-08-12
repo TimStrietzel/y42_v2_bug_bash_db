@@ -1,7 +1,7 @@
 {
-  "$schema": "https://s.dev.y42.dev/exports/big_query/0.0.0/table",
-  "datasource_table": "src/Models/UI/new_UI_model_tim/new_ui_model_tim",
+  "$schema": "https://s.dev.y42.dev/exports/big_query/0.0.1/table",
   "dataset_id": "cloud_function_extract_load_data_set",
   "table_id": "test_table_export",
-  "project_id": "todo"
+  "project_id": "todo",
+  "datasource_table_path": "src/Models/UI/new_UI_model_tim/new_ui_model_tim"
 }
