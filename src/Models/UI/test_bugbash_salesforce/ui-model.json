@@ -1,5 +1,45 @@
 {
-  "nodeDataArray": [],
-  "linkDataArray": [],
+  "nodeDataArray": [
+    {
+      "key": "1b8dc80a-4c2c-44c0-99e8-041ae4ebf897",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "1b8dc80a-4c2c-44c0-99e8-041ae4ebf897",
+        "title": "src/Models/UI/new_UI_model_tim/new_ui_model_tim",
+        "transformationType": "INPUT",
+        "datasourceName": "new_UI_model_tim",
+        "transformObject": {
+          "source": "src/Models/UI/new_UI_model_tim",
+          "table": "src/Models/UI/new_UI_model_tim/new_ui_model_tim",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-868.5294117647059 -520.2935527053185"
+    },
+    {
+      "key": "d4edf77e-927e-4a52-9e4c-f7b7c70860fc",
+      "type": "GEOLOCATION",
+      "category": "GEOLOCATION",
+      "transformationStep": {
+        "id": "d4edf77e-927e-4a52-9e4c-f7b7c70860fc",
+        "title": "",
+        "transformationType": "GEOLOCATION"
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-246.70588235294122 -491.0816326530612"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "from": "1b8dc80a-4c2c-44c0-99e8-041ae4ebf897",
+      "to": "d4edf77e-927e-4a52-9e4c-f7b7c70860fc",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ],
   "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
 }
