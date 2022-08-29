@@ -1,5 +1,5 @@
 {
-  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-widget-settings.json",
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.4/visualization/visualization-widget-settings.json",
   "chart_type": "bar_line_chart",
   "settings": {
     "series": [
@@ -246,7 +246,6 @@
       "alias": "MONTH_YEAR_date_start_7aa4d2c8_a186_44ef_b22c_c3dc7e3c641b",
       "id": "7aa4d2c8_a186_44ef_b22c_c3dc7e3c641b",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -257,7 +256,6 @@
       "alias": "VALUE_campaign_name_441d200b_a623_4fe9_8180_a8519c08241b",
       "id": "441d200b_a623_4fe9_8180_a8519c08241b",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -268,7 +266,6 @@
       "alias": "SUM_spend_b2f15aa2_af18_4075_8f09_1ea8128b0f21",
       "id": "b2f15aa2_af18_4075_8f09_1ea8128b0f21",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     }

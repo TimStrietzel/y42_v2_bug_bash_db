@@ -1,5 +1,5 @@
 {
-  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-widget-settings.json",
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.4/visualization/visualization-widget-settings.json",
   "chart_type": "bar_line_chart",
   "settings": {
     "series": [
@@ -252,7 +252,6 @@
       "alias": "SUM_budget_remaining_233b3b2d_16e5_4132_8a63_5d63a3416383",
       "id": "233b3b2d_16e5_4132_8a63_5d63a3416383",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -263,7 +262,6 @@
       "alias": "SUM_daily_budget_03d2bd2f_7b7a_4e6a_b05b_36c3ff8ce609",
       "id": "03d2bd2f_7b7a_4e6a_b05b_36c3ff8ce609",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -274,7 +272,6 @@
       "alias": "VALUE_id_36b98c4c_4d71_465b_b3dc_a425b19be46b",
       "id": "36b98c4c_4d71_465b_b3dc_a425b19be46b",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -285,7 +282,6 @@
       "alias": "VALUE_name_668a6baa_293f_49c3_8921_737a04c18b96",
       "id": "668a6baa_293f_49c3_8921_737a04c18b96",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     }

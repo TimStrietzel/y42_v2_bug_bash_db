@@ -1,5 +1,5 @@
 {
-  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-widget-settings.json",
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.4/visualization/visualization-widget-settings.json",
   "chart_type": "table",
   "settings": {
     "series": [
@@ -359,7 +359,6 @@
       "alias": "SUM_mrr_c_410f629f_0dd6_4ca0_80c1_4a7dc1e8d3ba",
       "id": "410f629f_0dd6_4ca0_80c1_4a7dc1e8d3ba",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -370,7 +369,6 @@
       "alias": "COUNT_accountid_5df4bf1a_805e_4b34_a346_a0658a995dd2",
       "id": "5df4bf1a_805e_4b34_a346_a0658a995dd2",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -381,7 +379,6 @@
       "alias": "VALUE_opportunity_owner_email_c_b076b61c_4d13_408b_8e21_3dbdd22dc9a3",
       "id": "b076b61c_4d13_408b_8e21_3dbdd22dc9a3",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -392,7 +389,6 @@
       "alias": "YEAR_closedate_11c8ab5b_c4bf_4233_b23d_c30c40422180",
       "id": "11c8ab5b_c4bf_4233_b23d_c30c40422180",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     }

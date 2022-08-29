@@ -1,5 +1,5 @@
 {
-  "$schema": "https://s.dev.y42.dev/frontend/0.0.2/visualization/visualization-widget-settings.json",
+  "$schema": "https://s.dev.y42.dev/frontend/0.0.4/visualization/visualization-widget-settings.json",
   "chart_type": "bar_line_chart",
   "settings": {
     "series": [
@@ -230,7 +230,6 @@
       "alias": "VALUE_order_month_a4aea73a_6bb8_46f0_997e_3e06be7905e6",
       "id": "a4aea73a_6bb8_46f0_997e_3e06be7905e6",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     },
@@ -241,7 +240,6 @@
       "alias": "SUM_sum_adspend_4b5e7ca7_096f_494f_abd5_a68c64578131",
       "id": "4b5e7ca7_096f_494f_abd5_a68c64578131",
       "lowCodeString": null,
-      "functionTree": null,
       "show_in_percentage": false,
       "filters": []
     }
